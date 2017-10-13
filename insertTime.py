@@ -3,7 +3,7 @@ import workflow
 import editor
 from datetime import datetime, timedelta, date
 
-runningDate = date.today()
-format = '%X'
+runningDate = datetime.now()
+format = '%H:%M'
 dateText = runningDate.strftime(format)
 editor.insert_text(dateText)
